@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="yogeshTestProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="NotesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TblNotes" EntityType="yogeshTestProjectModel.TblNote" />
+    <EntitySet Name="TblUsers" EntityType="yogeshTestProjectModel.TblUser" />
+    <AssociationSet Name="FK__TblNote__UserId__30F848ED" Association="yogeshTestProjectModel.FK__TblNote__UserId__30F848ED">
+      <End Role="TblUser" EntitySet="TblUsers" />
+      <End Role="TblNote" EntitySet="TblNotes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TblNote">
+    <Key>
+      <PropertyRef Name="NoteId" />
+    </Key>
+    <Property Name="NoteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NoteDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TblUser" Relationship="yogeshTestProjectModel.FK__TblNote__UserId__30F848ED" FromRole="TblNote" ToRole="TblUser" />
+  </EntityType>
+  <EntityType Name="TblUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TblNotes" Relationship="yogeshTestProjectModel.FK__TblNote__UserId__30F848ED" FromRole="TblUser" ToRole="TblNote" />
+  </EntityType>
+  <Association Name="FK__TblNote__UserId__30F848ED">
+    <End Type="yogeshTestProjectModel.TblUser" Role="TblUser" Multiplicity="1" />
+    <End Type="yogeshTestProjectModel.TblNote" Role="TblNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="TblNote">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

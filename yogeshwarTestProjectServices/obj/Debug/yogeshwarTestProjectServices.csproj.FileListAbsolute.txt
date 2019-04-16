@@ -1,0 +1,16 @@
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectServices.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectServices.pdb
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectData.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectModel.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectData.pdb
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectModel.pdb
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\obj\Debug\yogeshwarTestProjectServices.csprojAssemblyReference.cache
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\obj\Debug\yogeshwarTestProjectServices.csproj.CoreCompileInputs.cache
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\obj\Debug\yogeshwarTestProjectServices.csproj.CopyComplete
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\obj\Debug\yogeshwarTestProjectServices.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\obj\Debug\yogeshwarTestProjectServices.pdb
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectServices.dll.config
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\EntityFramework.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectModel.dll.config
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\EntityFramework.xml
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectServices\bin\Debug\yogeshwarTestProjectData.dll.config

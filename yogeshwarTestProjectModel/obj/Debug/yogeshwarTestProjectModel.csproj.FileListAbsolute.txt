@@ -1,0 +1,12 @@
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\bin\Debug\yogeshwarTestProjectModel.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\bin\Debug\yogeshwarTestProjectModel.pdb
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\obj\Debug\yogeshwarTestProjectModel.csprojAssemblyReference.cache
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\obj\Debug\yogeshwarTestProjectModel.csproj.CoreCompileInputs.cache
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\obj\Debug\yogeshwarTestProjectModel.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\obj\Debug\yogeshwarTestProjectModel.pdb
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\bin\Debug\yogeshwarTestProjectModel.dll.config
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\bin\Debug\EntityFramework.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\bin\Debug\EntityFramework.xml
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\yogeshwarTestProject\yogeshwarTestProjectModel\obj\Debug\yogeshwarTestProjectModel.csproj.CopyComplete

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NotesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'yogeshTestProject.dbo.TblNote' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TblNote">
+    <Key>
+      <PropertyRef Name="NoteId" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="isDeleted" />
+    </Key>
+    <Property Name="NoteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="200" />
+    <Property Name="NoteDescription" Type="varchar(max)" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="NotesModelStoreContainer">
+    <EntitySet Name="TblUser" EntityType="Self.TblUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblNote" EntityType="Self.TblNote" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TblNote].[NoteId] AS [NoteId], 
+    [TblNote].[Title] AS [Title], 
+    [TblNote].[NoteDescription] AS [NoteDescription], 
+    [TblNote].[UserId] AS [UserId], 
+    [TblNote].[isDeleted] AS [isDeleted]
+    FROM [dbo].[TblNote] AS [TblNote]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
